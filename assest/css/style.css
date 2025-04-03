@@ -1,0 +1,1109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Sans+Display:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+/* CSS Varable */
+:root {
+  --color-FFFFFF: #ffffff;
+  --color-NavFont: #576B77;
+  --black-5: #D2D6D9;
+  --black-7: #F4F5F5;
+  --color-nav-bg: #454444;
+  --color-logo: #FF5631;
+  --primary-yellow: #F9D923;
+  --secondary-green: #36AE7C;
+  --color-000: #000000;
+  --color-888: #888888;
+  --color-FB582B: #FB582B;
+  --supportive-red: #EB5353;
+  --black-1: #1F3441;
+  --black-2: #4C5C67;
+  --black-3: #79858D;
+  --color-E4FFF4: #E4FFF4;
+  --color-24191C-40: rgba(36, 25, 28, 0.4);
+  --color-linear-70: linear-gradient(rgba(27, 24, 24, 0.70), rrgba(27, 24, 24, 0.70));
+  --color-linear-80: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  --color-linear-40: linear-gradient(rgba(133, 188, 112, 0.40), rgba(133, 188, 112, 0.40));
+}
+img {
+  max-width: 100%;
+}
+/*****====== Common Class ======***/
+.title-text{
+  font-family: "Lora", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 50px;
+}
+.title-text span{
+  color: var(--supportive-red);
+   font-family: "Lora", sans-serif;
+}
+h4{
+  font-family: "Lora", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+p{
+  font-family:"Open", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+}
+.main-btn{
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  background: var(--primary-yellow);
+  border: none;
+  outline: none;
+  border: 2px solid var(--primary-yellow);
+  transition: 0.2s ease-in-out;
+}
+.main-btn:hover {
+  background-color: transparent;
+}
+.our_restaurant,
+.populer_dishe,
+.our_specile_menu,
+.our_chef,
+.our-regular-menu,
+.service_section,
+.contact_section,
+.reservation {
+  padding-block: 80px;
+}
+.regular_menu_section{
+  padding-block: 80px;
+}
+/*****====== Common Class End ======***/
+
+/* Header section start */
+.banner {
+  background-image: url(../images/banner.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.site_img img{
+  width: 700px;
+  height: 500px;
+  margin-right: -280px;
+}
+/* nav sevtion start */
+.navbar {
+  padding-block: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  background: transparent;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(20, 19, 19, 0.2);
+}
+.navbar-brand {
+  color: var(--color-logo);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar-brand span {
+  color: var(--secondary-green);
+  font-family: "Noto Sans", sans-serif;
+}
+.navbar-nav {
+  margin-right: 100px;
+}
+.nav-link {
+  margin-inline: 15px;
+  color: var(--color-000);
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 13px 0 !important;
+}
+.nav-link:hover {
+  color: var(--color-logo) !important;
+}
+.nav-link.active {
+  color: var(--color-logo) !important;
+}
+.nav_search i {
+  font-size: 24px;
+  color: var(--black-1);
+  cursor: pointer;
+}
+.nav_search span {
+  color: var(--black-1);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-inline: 16px 60px;
+}
+/* ==== *** Navbar Active Design *** ==== */
+
+.primary_btn {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 16px 30px;
+  background-color: var(--color-FFFFFF);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border: 1px solid var(--color-FFFFFF);
+  transition: 0.2s ease-in-out;
+}
+.primary_btn:hover {
+  background-color: transparent;
+}
+.navbar .primary_btn {
+  padding: 8px 16px;
+}
+/* ==== *** Navbar Toggler Design *** ==== */
+.navbar-toggler {
+  border-color: var(--color-FFFFFF);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  filter: brightness(100);
+}
+/* ==== *** Navbar Design End *** ==== */
+/* Home section start */
+.site-main{
+    margin-left: auto;
+}
+.site-main .site-title {
+  padding-top: 8%;
+  font-weight: 700;
+  position: relative;
+}
+.site-title h1{
+  color: var(--black-1);
+  font-family: "Lora", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.site-title h1 span{
+  color: var(--supportive-red);
+  font-family: "Lora", sans-serif;
+}
+.site-title p {
+  color: var(--black-2);
+  font-family: "Open", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+}
+.play-btn {
+  position: relative;
+  width: 44px;
+  height: 45px;
+  margin-inline: 20px;
+}
+.site-buttons{
+  margin-top: 25px;
+}
+.site-buttons a {
+  color: var(--black-2);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; 
+  text-decoration-line: underline;
+}
+.site-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 3%;
+}
+.site-icon .icon-box{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    background: #fff;
+}
+.header-card{
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    background: #9DC98C;
+    margin-bottom: 30px;
+    padding:10px 30px ;
+}
+.header-card-content h4, p{
+    color: var(--black-7);
+}
+.header-client{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+.client-img img{
+  margin-left: -23px;
+  width: 50px;
+}
+.client-img img:first-child{
+  margin-left: 0;
+}
+.client-content {
+  margin-left: 30px;
+}
+.client-content h1{
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.star-icon p{
+  color: #615F5F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-left: 5px;
+  margin-top: 15px;
+}
+.star-icon i{
+  width: 24px;
+  height: 24px;
+}
+/* ==== *** Headline Design End *** ==== */
+/*-----==== 2 No secrtion-========----*/
+.about-content{
+  padding-bottom: 20px;
+}
+.about-text{
+  margin-top: 60px;
+  text-align: left;
+}
+.about-text p{
+  padding-right: 150px;
+}
+.about-img img{
+  margin-left: -50%;
+}
+/* ==== 3 N0 Section Design Start *** ==== */
+.video-banner{
+  background-image:linear-gradient(rgba(14, 20, 72, 0.60), rgba(14, 20, 72, 0.60)), url(../images/3-no-bg.png);
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.video-banner .img{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+}
+/* ==== 4 N0 Section Design Start *** ==== */
+.card{
+  transition: .3s ease-in-out;
+  border: none;
+}
+.card:hover{
+  box-shadow: 8px 12px 48px 0px rgba(0, 0, 0, 0.08);
+}
+.card-body{
+  padding: 25px;
+}
+.card img{
+  object-fit: cover;
+}
+.card p{
+  color: #888;
+}
+.card-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.card-price{
+  color: var(--secondary-green);
+  font-family: "Lora", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.card-link{
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid var(--black-5);
+  transition: all 0.3s ease-in-out;
+}
+.card-btn .btn:hover{
+  border-radius: 8px;
+  color: #F4F5F5;
+  background: var(--secondary-green);
+
+}
+
+/* ==== *** Owl Navigation Button Design Start *** ==== */
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 60px;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  width: 49px;
+  height: 49px;
+  flex-shrink: 0;
+  background-color: #D2D6D9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.owl-nav .owl-next {
+  color: #4C5C67;
+  background-color: #FFD82E;
+}
+.owl-nav .owl-prev {
+  color: #4C5C67;
+}
+.owl-nav .owl-prev:hover{
+  background-color: #FFD82E;
+}
+/* ==== *** Owl Navigation Button Design End *** ==== */
+
+@media (max-width: 768px) {
+  .owl-item:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
+/* ==== 5 N0 Specile Menu Section Design Start *** ==== */
+
+.site-boder{
+  margin-right: 100px;
+  border-right: 1px solid #FEF5C2;
+}
+.box.open a{
+  background: #F9D923;
+}
+.box{
+  position: relative;
+}
+.box::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 3px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+.box.open::after{
+  background-color: #F9D923;
+}
+.box a{
+  color: #4C5C67;
+  font-family: "Open", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.box img{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.menu-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.menu-content img{
+  margin-left: -65px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.menu-content h6{
+  color: var(--black-1);
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/*======== 6=No=start========*/
+.chef-card{
+  background: #A8BCB7;
+  border: none;
+  object-fit: contain;
+  background-position: center;
+}
+.card-content h4{
+  color: #000;
+}
+.card-content p{
+  color: #000;
+  font-family: "Open ", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.96px;
+  text-transform: capitalize;
+}
+/**** ====== 7-N0 section =====****/
+.reguler-menu p{
+  border-bottom: 1px dashed #4C5C67;
+}
+.reguler-menu span{
+  color: var(--secondary-green);
+  font-family: "Lora", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  text-transform: capitalize;
+}
+/**** ====== 8-N0 section ======****/
+.menu_item {
+  position: relative;
+}
+.menu_item img {
+  width: 438px;
+  height: 310px;
+  object-fit: cover;
+}
+.menu_item_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease-in-out;
+}
+.menu_item_content .inner_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(27, 24, 24, 0.70);
+  border: 6px solid var(--primary-yellow);
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.menu_item:hover .menu_item_content .inner_item {
+  visibility: visible;
+  opacity: 1;
+}
+.inner_item a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: var(--black-7);
+  border: 1px solid var(--black-5);
+  background: rgba(19, 18, 18, 0.50);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-block: 30px 25px;
+}
+.inner_item span {
+  color: var(--primary-yellow);
+  font-family: "Lora", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+/***** ====== 9-N0 section ======****/
+.menu-section{
+  background-image:linear-gradient(rgba(36, 25, 28, 0.40), rgba(36, 25, 28, 0.40)), url(../images/Rezarvation-bg.png);
+  padding-block: 100px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.contact-form input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--black-7);
+  background: var(--black-1);
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.contact-form input::placeholder{
+    color: var(--black-7);
+}
+.review-content h5{
+  color: var(--black-2);
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+  padding-right: 100px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+/*======= Testimonial Section ====== */
+.testi-img img{
+  max-width: 730px;
+  height: 490px;
+}
+.testi-item i {
+  color:#FFA901;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.testi-item p {
+  color: var(--black-3);
+}
+.tastiminil_section .carousel-inner{
+  margin-bottom: 30px;
+}
+.tastiminil_section{
+  padding: 80px 0; 
+}
+.tastiminil_section .carousel-inner{
+  margin-bottom: 20px;
+}
+.tastiminil_section .carousel-control-prev{
+  margin-right: 10px;
+}
+.tastiminil_section .carousel-control-next, .carousel-control-prev {
+  position: relative;
+  height: 49px;
+  width: 49px;
+  background-color:  #F9D923;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+}
+.tastiminil_section .carousel-control-prev, 
+.tastiminil_section .carousel-control-next i{
+  font-size: 24px;
+  color: #000;
+}
+.carousel-inner h5{
+  position: relative;
+  color: var(--black-2);
+  font-family: "Lora", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.carousel-inner img{
+  position: absolute;
+  top: 190px;
+  right: 100px;
+  width: 60px;
+}
+.tastiminil_section .carousel-control-prev:hover{
+  background-color: #FFD82E;
+}
+.tastiminil_section .carousel-control-next:hover{
+  background-color: #FFD82E;
+}
+
+/* ==== *** Footer Section Design Start *** ==== */
+.footer_card .navbar-brand {
+  font-size: 36px;
+  line-height: 46px;
+  font-family: "Lora", sans-serif;
+}
+.footer_card h6 {
+  color: #FFF;
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.footer_card input{
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: var(--black-7);
+  color: var(--black-3);
+  font-family: "Open", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+}
+.footer_images {
+  position: relative;
+}
+.footer_images img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.ins-icon{
+  width: 60px!important;
+  height: 60px!important;
+  object-fit: contain!important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0!important;
+}
+.footer_card ul {
+  margin-top: 14px;
+  list-style: none;
+  padding: 0;
+}
+.footer_card ul li {
+  margin-bottom: 8px;
+}
+.footer_card ul li a {
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+}
+/* ==== *** Social Links Design Start *** ==== */
+.social_menu {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+/* ==== *** Footer Section Design End *** ==== */
+
+/****** About Page start *******/
+.site-main .site-banner .about_us {
+  padding-top: 22%;
+  font-weight: 700;
+  position: relative;
+}
+/**** Menu page ****/
+.menu_banner {
+  background-image: url(../images/menu_bg.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  object-fit: center;
+  position: relative;
+}
+/***** contact page start *******/
+.contact-add{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.contact_us input,
+.contact_us textarea{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--black-7);
+  background: #EBEBEB;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.contact_us input::placeholder{
+    color: var(--black-1);
+}
+.contact_us textarea{
+  min-height: 200px;
+}
+.send_btn{
+  width: 100%;
+  padding: 16px 160px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: none;
+  transition: .3s;
+  border-radius: 8px;
+  background: #FF5631;
+}
+/****** Reservation Page Start *****/
+.booking-form input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--black-2);
+  background: var(--black-2);
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.booking-form input::placeholder{
+    color: var(--black-3);
+}
+.booking-form textarea{
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--black-2);
+  height: 216px;
+  padding: 20px;
+  background: var(--black-2);
+}
+.booking-form textarea::placeholder{
+  color: var(--black-3);
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+/* contact_section start */
+.contact_section{
+  padding-block: 80px;
+  background: #85BC70;
+}
+.card-area{
+  width: 370px;
+  height: 304px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 16px;
+  background: #FFF;
+  align-items: center;
+}
+.card-area svg{
+  width: 64px;
+  height: 64px;
+  padding-bottom: 30px;
+}
+.banner{
+  border: 2px solid red;
+}
+
+
+
+/* Responsive CSS for Food Website */
+
+/* Base Styles */
+@media (max-width: 1199.98px) {
+  /* Large Devices (Desktops) */
+  .site-title h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .navbar-nav {
+    margin-right: 80px;
+  }
+  .about-text p {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Medium Devices (Laptops) */
+  .site-title h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .navbar-nav {
+    margin-right: 50px;
+  }
+  .site_img img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .site-boder {
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #FEF5C2;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .menu-box {
+    width: 100%;
+  }
+  .testi-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Small Devices (Tablets) */
+  .navbar {
+    padding-block: 10px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+  .nav_search {
+    margin-top: 15px;
+  }
+  .site-title h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .site-icon {
+    align-items: center;
+    padding-top: 5%;
+  }
+  .header-card {
+    width: 100%;
+  }
+  .about-img img {
+    margin-left: 0;
+  }
+  .about-text {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .about-text p {
+    padding-right: 0;
+  }
+  .menu_item img {
+    width: 100%;
+    height: auto;
+  }
+  .menu_item_content .inner_item {
+    visibility: visible;
+    opacity: 1;
+  }
+  .chef-card {
+    margin-bottom: 30px;
+  }
+  .footer_card {
+    margin-bottom: 30px;
+  }
+  .footer_images img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra Small Devices (Phones) */
+  .site-title h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .site-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .play-btn {
+    margin-inline: 0;
+    margin-top: 15px;
+  }
+  .header-client {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .client-content {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .title-text {
+    font-size: 28px;
+    line-height: 38px;
+    padding-bottom: 30px;
+  }
+  .reguler-menu span {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .contact-form input,
+  .booking-form input {
+    padding: 15px;
+  }
+  .send_btn {
+    padding: 16px;
+    width: 100%;
+  }
+  .card-area {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .video-banner {
+    height: 50vh;
+  }
+  .menu-section {
+    padding-block: 50px;
+  }
+  .our_restaurant,
+  .populer_dishe,
+  .our_specile_menu,
+  .our_chef,
+  .our-regular-menu,
+  .service_section,
+  .contact_section,
+  .reservation {
+    padding-block: 50px;
+  }
+  .regular_menu_section {
+    padding-block: 40px;
+  }
+}
+
+/* Specific Mobile Fixes */
+@media (max-width: 480px){
+  .site-title h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .main-btn, .primary_btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .header-card {
+    padding: 10px 15px;
+  }
+  .site-buttons a p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration-line: underline;
+    margin: 0;
+  }
+  .site-buttons a img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .gaps {
+    gap: 10px;
+    align-items: center;
+  }
+  .client-content h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .footer_section{
+    /* width: 100px; */
+  }
+  .footer_images img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Landscape Orientation for Mobile
+@media (max-height: 500px) and (orientation: landscape) {
+  .banner {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .site-main .site-title {
+    padding-top: 10%;
+  }
+}
+
+/* High Resolution Displays */
+/* Print Styles */
+@media print {
+  .navbar, .footer_section, .site-buttons {
+    display: none;
+  }
+  body {
+    background: white;
+    color: black;
+    font-size: 12px;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+} */
