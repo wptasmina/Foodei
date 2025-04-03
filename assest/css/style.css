@@ -241,14 +241,14 @@ p{
 .site-buttons{
   margin-top: 25px;
 }
-.site-buttons a {
+.site-buttons a p{
   color: var(--black-2);
   font-family: Open Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; 
   text-decoration-line: underline;
+  margin-bottom: 0;
 }
 .site-icon {
   display: flex;
@@ -296,7 +296,7 @@ p{
 .client-content h1{
   color: #000;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   line-height: normal;
   text-align: center;
@@ -352,6 +352,12 @@ p{
   cursor: pointer;
 }
 /* ==== 4 N0 Section Design Start *** ==== */
+.populer_dishe{
+  background: #f5f4f4;
+}
+.owl-item {
+  border: 1px solid #f5f4f4;
+}
 .card{
   transition: .3s ease-in-out;
   border: none;
@@ -359,9 +365,7 @@ p{
 .card:hover{
   box-shadow: 8px 12px 48px 0px rgba(0, 0, 0, 0.08);
 }
-.card-body{
-  padding: 25px;
-}
+
 .card img{
   object-fit: cover;
 }
@@ -384,10 +388,10 @@ p{
   margin-bottom: 0;
 }
 .card-link{
-  padding: 10px 20px;
-  color: #000;
+  padding: 10px 14px;
+  color: var(--secondary-green);
   border-radius: 8px;
-  border: 1px solid var(--black-5);
+  border: 1px solid var(--secondary-green);
   transition: all 0.3s ease-in-out;
 }
 .card-btn .btn:hover{
@@ -864,11 +868,6 @@ p{
   height: 64px;
   padding-bottom: 30px;
 }
-.banner{
-  border: 2px solid red;
-}
-
-
 
 /* Responsive CSS for Food Website */
 
@@ -878,6 +877,9 @@ p{
   .site-title h1 {
     font-size: 50px;
     line-height: 60px;
+  }
+  .site-buttons a p {
+    margin: 0;
   }
   .navbar-nav {
     margin-right: 80px;
@@ -889,6 +891,21 @@ p{
 
 @media (max-width: 991.98px) {
   /* Medium Devices (Laptops) */
+  .col-md-4 {
+    width: 50%;
+  }
+  .col-md-8 {
+    width: 50%;
+  }
+  .play-btn{
+    margin-inline: 10px;
+  }
+  .site-buttons a p {
+    margin: 0;
+  }
+  .gaps{
+    gap: 0px;
+  }
   .site-title h1 {
     font-size: 48px;
     line-height: 58px;
@@ -907,6 +924,9 @@ p{
     border-bottom: 1px solid #FEF5C2;
     padding-bottom: 30px;
     margin-bottom: 30px;
+  }
+  .client-content h1{
+    font-size: 16px;
   }
   .menu-box {
     width: 100%;
@@ -938,6 +958,17 @@ p{
   .site-icon {
     align-items: center;
     padding-top: 5%;
+  }
+  .site-buttons a p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .client-content h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 15px;
   }
   .header-card {
     width: 100%;
@@ -978,6 +1009,35 @@ p{
     font-size: 36px;
     line-height: 46px;
   }
+  .main-btn, .primary_btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .header-card {
+    padding: 10px 15px;
+  }
+  .site-buttons a p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration-line: underline;
+    margin: 0;
+  }
+  .site-buttons a img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .gaps {
+    gap: 10px;
+    align-items: center;
+  }
+  .client-content h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
   .site-buttons {
     flex-direction: column;
     gap: 15px;
@@ -998,6 +1058,9 @@ p{
     font-size: 28px;
     line-height: 38px;
     padding-bottom: 30px;
+  }
+  .video-banner img{
+    width: 50px;
   }
   .reguler-menu span {
     font-size: 28px;
@@ -1071,6 +1134,9 @@ p{
     font-weight: 700;
     line-height: 20px;
   }
+  .video-banner img{
+    width: 50px;
+  }
   .footer_section{
     /* width: 100px; */
   }
@@ -1093,7 +1159,7 @@ p{
 
 /* High Resolution Displays */
 /* Print Styles */
-@media print {
+/* @media print {
   .navbar, .footer_section, .site-buttons {
     display: none;
   }
@@ -1106,4 +1172,4 @@ p{
     width: 100%;
     padding: 0;
   }
-} */
+}  */
